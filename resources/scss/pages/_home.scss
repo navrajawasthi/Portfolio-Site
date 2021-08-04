@@ -1,0 +1,739 @@
+//section1
+.section1 {
+    background-size: cover;
+    background-position: right;
+    .first-slide {
+        h1 {
+            position: absolute;
+            bottom: 50%;
+            left: 20%;
+            font-size: 72px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include breakpoint(small) {
+                left: 15%;
+            }
+            @include breakpoint(smaller) {
+                font-size: 40px;
+            }
+            @include breakpoint(iPhone5) {
+                left: 7%;
+            }
+        }
+        span {
+            position: absolute;
+            bottom: 46%;
+            left: 23.5%;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            @include breakpoint(medium) {
+                left: 27%;
+            }
+            @include breakpoint(small) {
+                left: 23%;
+            }
+            @include breakpoint(smaller) {
+                left: 18%;
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+            @include breakpoint(extrasmall) {
+                left: 18%;
+                bottom: 47%;
+            }
+            @include breakpoint(iPhone5) {
+                left: 11%;
+            }
+        }
+
+        .link-icons-first {
+            position: absolute;
+            left: 22.5%;
+            top: 55%;
+            
+            @include breakpoint(medium) {
+                left: 25.5%;
+            }
+            @include breakpoint(small) {
+                left: 21%;
+            }
+            @include breakpoint(smaller) {
+                left: 8%;
+            }
+            @include breakpoint(extrasmall) {
+                left: 15%;
+                top: 54%;
+            }
+            @include breakpoint(iPhone5) {
+                left: 6%;
+            }
+               
+            .fa {
+                margin: 20px;
+                transition: 0.5s ease-in-out;
+                @include breakpoint(extrasmall) {
+                    margin: 10px;
+                }
+            }
+            .fa-facebook {
+                font-size: 25px;
+                color: #fff;
+                background-color: #3b5998;
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                padding-top: 10px;
+                cursor: pointer;
+                text-align: center;
+                &:hover{
+                    background: #fff;
+                    color: #3b5998;
+                }
+                
+            }
+            .fa-instagram {
+                font-size: 25px;
+                color: #fff;
+                background:#fd5949;
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                padding-top: 10px;
+                cursor: pointer;
+                text-align: center;
+                 &:hover{
+                    background: #fff;
+                    color: #fd5949;
+                }
+            }
+            .fa-linkedin {
+                font-size: 25px;
+                color: #fff;
+                background-color: #007bb7;
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                padding-top: 10px;
+                cursor: pointer;
+                text-align: center;
+                 &:hover{
+                    background: #fff;
+                    color: #007bb7;
+                }
+            }
+            .fa-twitter {
+                font-size: 25px;
+                color: #fff;
+                background-color: #3cf;
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                padding-top: 10px;
+                cursor: pointer;
+                text-align: center;
+                 &:hover{
+                    background: #fff;
+                    color: #3cf;
+                }
+            }
+        }
+    }
+}
+
+//section2
+.section2 {
+    background-size: cover;
+    position: relative;
+    .overlay {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .second-slide {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        width: 80%;
+        padding: 10vh 50px;
+        margin: 200px auto;
+        margin-top: 10%;
+        border-radius: 50px;
+        @include breakpoint(extrasmall) {
+            padding: 10vh 15px;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include breakpoint(smaller) {
+                font-size: 30px;
+            }
+            @include breakpoint(iPhone5) {
+                font-size: 25px;
+            }
+        }
+        .education-skill {
+            margin-bottom: 5%;
+            h4 {
+                padding: 5%;
+                background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+                letter-spacing: 2px;
+                @include breakpoint(extrasmall) {
+                    font-size: 20px;
+                }
+            }
+            &:after {
+                content: "";
+                background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+                position: absolute;
+                width: 2px;
+                height: 85%;
+                top: 12%;
+                left: 100%;
+                display: block;
+                @include breakpoint(medium) {
+                    display: none;
+                }
+            }
+        }
+        .education-section {
+            margin-bottom: 5%;
+            p {
+                padding-left: 5%;
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                @include breakpoint(extrasmall) {
+                    font-size: 16px;
+                }
+            }
+            span {
+                padding: 5%;
+                font-size: 20px;
+                letter-spacing: 1px;
+                @include breakpoint(extrasmall) {
+                    font-size: 18px;
+                }
+                @include breakpoint(iPhone5) {
+                    font-size: 16px;
+                }
+            }
+        }
+        .work-experience {
+            margin-bottom: 5%;
+            h4 {
+                padding: 5%;
+                background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+                letter-spacing: 2px;
+                @include breakpoint(extrasmall) {
+                    font-size: 20px;
+                }
+            }
+            @include breakpoint(medium) {
+                margin-top: 5%;
+            }
+        }
+        .working {
+            margin-bottom: 5%;
+            p {
+                padding-left: 5%;
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                @include breakpoint(extrasmall) {
+                    font-size: 16px;
+                }
+            }
+            span {
+                padding: 5%;
+                font-size: 20px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                @include breakpoint(extrasmall) {
+                    font-size: 18px;
+                }
+                @include breakpoint(iPhone5) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .iScrollIndicator {
+        width: 0% !important;
+    }
+}
+
+//section3
+.section3 {
+    background-size: cover;
+    position: relative;
+    .overlay {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .third-slide {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        width: 80%;
+        padding: 10vh 50px;
+        margin: 200px auto;
+        margin-top: 10%;
+        border-radius: 50px;
+        @include breakpoint(extrasmall) {
+            padding: 10vh 15px;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include breakpoint(smaller) {
+                font-size: 30px;
+            }
+            @include breakpoint(iPhone5) {
+                font-size: 25px;
+            }
+        }
+        span {
+            font-size: 20px;
+            line-height: 2;
+            text-transform: uppercase;
+            @include breakpoint(extrasmall) {
+                font-size: 18px;
+            }
+            @include breakpoint(iPhone5) {
+                font-size: 16px;
+            }
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            @include breakpoint(extrasmall) {
+                font-size: 16px;
+            }
+        }
+        .about {
+            margin-top: 5%;
+            .personal-details {
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    @include breakpoint(extrasmall) {
+                        font-size: 18px;
+                        word-break: break-word;
+                    }
+                    @include breakpoint(iPhone5) {
+                        font-size: 16px;
+                    }
+                }
+                hr {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border: 0;
+                    border-top: 1px solid #eee;
+                }
+            }
+            .development-skill {
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    @include breakpoint(extrasmall) {
+                        font-size: 18px;
+                    }
+                    @include breakpoint(iPhone5) {
+                        font-size: 16px;
+                    }
+                }
+                @include breakpoint(medium) {
+                    margin-top: 3%;
+                }
+            }
+            .demo {
+                padding-bottom: 20px;
+                .progressbar {
+                    width: 100%;
+                    background-color: rgb(238, 238, 238);
+                    border-radius: 0px;
+                    .percentCount {
+                        float: right;
+                        clear: both;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+                .progress {
+                    height: 10px;
+                    border-radius: 0px;
+                }
+                .demoprogress1 {
+                    .progress {
+                        background-color: rgb(26, 188, 156);
+                        width: 80%;
+                        animation: demoprogress1 20s;
+                    }
+                }
+                .demoprogress2 {
+                    .progress {
+                        background-color: rgb(155, 89, 182);
+                        width: 75%;
+                        animation: demoprogress2 20s;
+                    }
+                }
+                .demoprogress3 {
+                    .progress {
+                        background-color: rgb(230, 126, 34);
+                        width: 40%;
+                        animation: demoprogress3 20s;
+                    }
+                }
+                .demoprogress4 {
+                    .progress {
+                        background-color: rgb(241, 196, 15);
+                        width: 60%;
+                        animation: demoprogress4 20s;
+                    }
+                }
+                .demoprogress5 {
+                    .progress {
+                        background-color: rgb(8, 37, 54);
+                        width: 65%;
+                        animation: demoprogress5 20s;
+                    }
+                }
+                .demoprogress6 {
+                    .progress {
+                        background-color: rgb(141, 61, 65);
+                        width: 90%;
+                        animation: demoprogress6 20s;
+                    }
+                }
+            }
+        }
+    }
+    .iScrollIndicator {
+        width: 0% !important;
+    }
+}
+
+//section4
+.section4 {
+    background-size: cover;
+    position: relative;
+    .overlay {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .fourth-slide {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        width: 80%;
+        padding: 10vh 50px;
+        margin: 200px auto;
+        margin-top: 10%;
+        border-radius: 50px;
+        @include breakpoint(extrasmall) {
+            padding: 10vh 15px;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include breakpoint(smaller) {
+                font-size: 30px;
+            }
+        }
+        .filter {
+            margin-bottom: 3%;
+            @include breakpoint(small) {
+                text-align: center;
+            }
+            .btn {
+                background: transparent;
+                outline: none;
+                border: 1px solid #ffff;
+                color: white;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                box-shadow: inset 0 0 0 0 rgb(202, 107, 107);
+                letter-spacing: 1px;
+                &:focus {
+                    box-shadow: none;
+                }
+                &:hover {
+                    box-shadow: inset 20rem 0 0 0 rgb(202, 107, 107);
+                }
+                @include breakpoint(small) {
+                    padding: 10px 24px;
+                    margin-bottom: 5%;
+                }
+                @include breakpoint(smaller) {
+                    padding: 10px 14px;
+                }
+                @include breakpoint(extrasmall) {
+                    padding: 10px 32px;
+                }
+                @include breakpoint(iPhone5) {
+                    padding: 10px 28px;
+                }
+            }
+        }
+        .filter-active .active-filter {
+            background: -webkit-linear-gradient(#eee, rgb(109, 23, 23)) !important;
+        }
+
+        .grid-item,
+        .grid-sizer {
+            width: calc(96% / 3);
+            position: relative;
+            margin-top: 2%;
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                @include breakpoint(small) {
+                    height: 300px;
+                }
+                @include breakpoint(smaller) {
+                    padding-bottom: 5%;
+                    height: 200px;
+                }
+            }
+            .overlay-grid-filter {
+                background: rgba(0, 0, 0, 0.8);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    opacity: 1;
+                }
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 600;
+                    width: 100%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    @include breakpoint(small) {
+                        font-size: 20px;
+                    }
+                }
+            }
+            @include breakpoint(wide) {
+                width: calc(98% / 2);
+            }
+            @include breakpoint(smaller) {
+                width: 100%;
+            }
+        }
+        .gutter-sizer {
+            width: 2%;
+        }
+    }
+    .iScrollIndicator {
+        width: 0% !important;
+    }
+}
+figure {
+    img {
+        max-height: 450px !important;
+    }
+}
+.mfp-arrow-left {
+    left: 20% !important;
+}
+.mfp-arrow-right {
+    right: 20% !important;
+}
+
+//section5
+.section5 {
+    background-size: cover;
+    position: relative;
+    .overlay {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .fifth-slide {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        width: 80%;
+        padding: 10vh 50px;
+        margin: 200px auto;
+        margin-top: 10%;
+        border-radius: 50px;
+        @include breakpoint(extrasmall) {
+            padding: 10vh 15px;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include breakpoint(smaller) {
+                font-size: 30px;
+            }
+            @include breakpoint(extrasmall) {
+                font-size: 25px;
+            }
+        }
+        .contact-details {
+            max-width: 100%;
+            border: 1px solid white;
+            padding: 5%;
+            margin-top: 5%;
+            p {
+                padding-left: 5%;
+                font-size: 18px;
+                line-height: 1.5;
+                letter-spacing: 1px;
+                @include breakpoint(extrasmall) {
+                    font-size: 16px;
+                }
+                @include breakpoint(iPhone5) {
+                    word-break: break-word;
+                }
+            }
+            span {
+                padding: 5%;
+                font-size: 20px;
+                line-height: 1.5;
+                text-transform: uppercase;
+                font-weight: bold;
+                @include breakpoint(extrasmall) {
+                    font-size: 18px;
+                }
+            }
+            hr {
+                margin-left: 5%;
+                margin-right: 5%;
+                border-top: 1px solid lightgray;
+            }
+        }
+        
+        .contact-form{
+            padding: 5% 0;
+            border: 1px solid #fff;
+            margin-top: 3.6%;
+            p{
+                padding: 0 5%;
+            }
+            .wpcf7-form-control-wrap{
+                   font-size: 20px;
+                   font-weight: 100;
+                   @include breakpoint(smaller){
+                       font-size: 16px;
+                   }
+            }
+            .input-text{
+                background: black;
+                border: 1px solid white;
+                padding: 10px 5px;
+                width: 100%;
+                border-radius: 10px;
+                color: #FFF;
+                    margin-top: 10px;
+                    outline: none;
+            }
+            textarea{
+                width: 100%;
+                background: black;
+                border: 1px solid white;
+                padding: 10px 5px;
+                 margin-top: 10px;
+                outline: none;
+                color: #fff;
+                border-radius: 10px;
+                 @include breakpoint(smaller){
+                     height: 100px;
+                 }
+            }
+            .submit{
+                padding: 10px 100px;
+                max-width: 100%;
+                color: #fff;
+                font-size: 20px;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+                box-shadow: inset 0 0 0 0 rgb(202, 107, 107);
+                transition: 0.5s ease-in-out;
+                &:hover{
+                    @include button-animation-hover();
+
+                    }
+            }
+            label{
+                display: block;
+                margin-bottom: 5%;
+            }
+            .wpcf7-quiz-label{
+                font-size: 50px;
+                font-weight: 600;
+                font-style: italic;
+                background: -webkit-linear-gradient(#eee, rgb(109, 23, 23));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+             @include breakpoint(smaller){
+                 font: 30px;
+             }
+            }
+            .wpcf7-not-valid-tip{
+                font-size: 18px;
+                display: block;
+                 @include breakpoint(small){
+                    font-size: 16px;
+                }
+            }
+            .wpcf7-response-output{
+                font-size: 18px;
+                margin-top: 0;
+                @include breakpoint(small){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .iScrollIndicator {
+        width: 0% !important;
+    }
+}
+
+
